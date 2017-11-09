@@ -1,0 +1,331 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'atomic_ageregular';
+    src: url('atomicage-regular-webfont.eot');
+    src: url('atomicage-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('atomicage-regular-webfont.woff2') format('woff2'),
+         url('atomicage-regular-webfont.woff') format('woff'),
+         url('atomicage-regular-webfont.ttf') format('truetype'),
+         url('atomicage-regular-webfont.svg#atomic_ageregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'fantasque_sans_monoregular';
+    src: url('fantasquesansmono-regular-webfont.eot');
+    src: url('fantasquesansmono-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fantasquesansmono-regular-webfont.woff2') format('woff2'),
+         url('fantasquesansmono-regular-webfont.woff') format('woff'),
+         url('fantasquesansmono-regular-webfont.ttf') format('truetype'),
+         url('fantasquesansmono-regular-webfont.svg#fantasque_sans_monoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+*
+{
+	margin:0;
+	padding:0;	
+}
+
+header
+{
+	width:100%;
+	height:90px;
+	background-color:#ad728e;
+}
+header h1
+{
+	font-size:40px;
+	font-family: 'atomic_ageregular';
+	margin-left:3%;
+	line-height:90px;
+	float:left;
+	color:#08000D;	
+}
+header nav
+{
+	width:30%;
+	height:30px;
+	display:block;
+	float:right;
+	background-color:none;
+	margin-top:30px;
+	margin-right:3%;
+	border:solid 0.5px #08000D;
+}
+header nav ul
+{
+	list-style-type:none;
+	margin:0;
+	padding:0;	
+}
+header nav ul li
+{
+	display:inline;	
+}
+header nav ul li a
+{
+	width:33.333333333%;
+	text-decoration:none;
+	font-family: 'atomic_ageregular';
+	font-size:20px;
+	line-height:30px;
+	display:inline-block;
+	float:left;
+	text-align:center;
+	color:black;
+}
+header nav ul li a:hover
+{
+	background-color:#08000D;
+	color:#C0B98B;
+}
+figure
+{
+	width:100%;
+	display:block;	
+}
+figure img
+{
+	max-width:100%;
+	display:block; /* margin entfernen*/
+		
+}
+#mobile
+{
+	display: none;
+}
+section
+{
+	width:100%;
+	height:auto;
+	background-color:#08000D;
+	padding-top:100px;
+	padding-bottom:100px;
+	margin-top:0;
+	float:left;
+}
+
+section figure
+{
+	width:16%;
+	float:left;
+	display:block;
+	margin-right:6.3%;
+}
+section figure img
+{
+	max-width:100%;	
+}
+.margin-left
+{
+	margin-left:10%;	
+}
+
+section article
+{
+	width:80%;
+	height:auto;
+	background-color:rgba(48,28,38,1.0);
+	margin-left:10%;
+	margin-top:60px;	
+	float:left;
+	padding-left:3%;
+}
+section article figure
+{
+	float: right;
+	width:25%;
+	margin-left:7%;
+	margin-right:10%;
+	margin-top:50px;	
+	margin-bottom: 50px;
+}
+section article figure img
+{
+	max-width:100%;
+	height:200px;	
+}
+section article h1
+{
+	margin-top:35px;
+	margin-bottom:30px;
+	color:#C0B98B;
+	font-family:'fantasque_sans_monoregular';
+	font-size:23px;
+}
+section article p
+{
+	color:#C0B98B;
+	font-family:"Asap Condensed";
+	padding-bottom:20px;
+	letter-spacing:0.5px;
+	font-size: 18px;
+	line-height: 20px;
+}
+footer
+{
+	width:100%;
+	height:60px;
+	background-color:#ad728e;	
+	padding-top:40px;
+	color:#08000D;
+}
+footer h3
+{
+	text-align:center;
+	font-family: 'atomic_ageregular';	
+}
+
+/* tablet*/
+@media screen and (min-width:420px) and (max-width:768px)
+{
+		header h1
+		{
+			margin-left:5%;	
+		}
+		header nav
+		{
+			margin-right:7%;	
+		}
+		section figure
+		{
+			width:37%;
+			height:auto;
+		}
+		section figure img
+		{
+			max-width:100%;	
+			margin-bottom: 30px;
+		}
+		section .margin-tablet
+		{
+			margin-left:10%;
+		}
+		section article
+		{
+			padding-bottom:20px;	
+		}
+		section article figure
+		{
+			display:none;	
+		}
+		section article p
+		{
+			margin-right:5%;
+			line-height:22px;
+		}
+}
+
+/*mobil*/
+@media screen and (max-width:420px)
+{
+	header h1
+	{
+		text-align:center;
+		margin-left:none;	
+		float:none;
+	}
+	header nav
+	{
+		float:none;
+		width:100%;
+		margin:0;
+		background-color:#ad728e;	
+	}
+	#pc
+	{
+		display:none;	
+	}
+	#mobile
+	{
+		display: block;
+	}
+	section
+	{
+		padding-top: 50px;	
+		padding-bottom: 50px;
+	}
+	section figure
+	{
+		float:none;
+		width: 100%;
+		margin-bottom:10%;
+		margin-left-reight: auto;
+	}
+	.margin-left
+	{
+		margin-left: 0;	
+	}
+	section figure img
+	{
+		margin-left:auto;
+		margin-right: auto;	
+	}
+	section article
+	{
+		margin-top: 50px;
+		padding-top:15px;
+		float:none;
+		margin: 0 auto;	
+		display: block;
+		background-color:transparent;
+		
+	}
+	section article figure
+	{
+		display:none;	
+	}
+	section article h1
+	{
+		margin-left: 5%
+	}
+	section article p
+	{
+		margin: 0 5%;
+		line-height:25px;
+	}
+	footer
+	{
+		padding-bottom:40px;	
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+schwarzes lila   #08000D
+abgesetztes lila #301c26
+hell lila        #ad728e
+hell gelb        #C0B98B
+hell orange      #EFC691
+
+
+
+*/
